@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuideView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-AE-qR6">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvB-Tu-t5h">
+                    <rect key="frame" x="187" y="0.0" width="187.5" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guidPointL" translatesAutoresizingMaskIntoConstraints="NO" id="Lmr-h5-G7o">
+                    <rect key="frame" x="60" y="525" width="82" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="T1M-Rm-3uu"/>
+                        <constraint firstAttribute="width" secondItem="Lmr-h5-G7o" secondAttribute="height" multiplier="1:1" id="vxr-9L-EUS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wvB-Tu-t5h" secondAttribute="bottom" id="0LT-qa-YYj"/>
+                <constraint firstItem="VRJ-AE-qR6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4SF-97-DsY"/>
+                <constraint firstAttribute="bottom" secondItem="Lmr-h5-G7o" secondAttribute="bottom" constant="60" id="Bye-Pp-fjy"/>
+                <constraint firstItem="Lmr-h5-G7o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="HHf-F5-jYG"/>
+                <constraint firstAttribute="trailing" secondItem="wvB-Tu-t5h" secondAttribute="trailing" id="Ued-ZJ-O6k"/>
+                <constraint firstItem="VRJ-AE-qR6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VmC-jQ-nKl"/>
+                <constraint firstItem="wvB-Tu-t5h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZTG-Os-f79"/>
+                <constraint firstAttribute="bottom" secondItem="VRJ-AE-qR6" secondAttribute="bottom" id="jzF-a0-OyE"/>
+                <constraint firstItem="wvB-Tu-t5h" firstAttribute="width" secondItem="VRJ-AE-qR6" secondAttribute="width" id="r4z-bZ-gU1"/>
+                <constraint firstItem="VRJ-AE-qR6" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="rir-EY-a66"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guidPointL" width="91" height="114"/>
+    </resources>
+</document>

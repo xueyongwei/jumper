@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PauseAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lFO-oN-bAa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVG-8o-GHB">
+                    <rect key="frame" x="47.5" y="215" width="280" height="238"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKT-Lq-o1B">
+                            <rect key="frame" x="0.0" y="5" width="280" height="148"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imarkPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="V43-Ew-3Ms">
+                                    <rect key="frame" x="5" y="0.0" width="270" height="148"/>
+                                    <gestureRecognizers/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="V43-Ew-3Ms" secondAttribute="trailing" constant="5" id="EM0-xT-af3"/>
+                                <constraint firstAttribute="width" secondItem="rKT-Lq-o1B" secondAttribute="height" multiplier="256:135" id="Isz-FW-Egz"/>
+                                <constraint firstItem="V43-Ew-3Ms" firstAttribute="leading" secondItem="rKT-Lq-o1B" secondAttribute="leading" constant="5" id="JWQ-at-mbA"/>
+                                <constraint firstAttribute="bottom" secondItem="V43-Ew-3Ms" secondAttribute="bottom" id="LlK-eO-K9x"/>
+                                <constraint firstItem="V43-Ew-3Ms" firstAttribute="top" secondItem="rKT-Lq-o1B" secondAttribute="top" id="fKb-Et-5XK"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Pc-AO1" customClass="XYWButton">
+                            <rect key="frame" x="10" y="168" width="125" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="uON-iC-3cP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Home" backgroundImage="alertbtn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="GoHomeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="FHy-6r-KeZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C11-Gl-Okv" customClass="XYWButton">
+                            <rect key="frame" x="145" y="168" width="125" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="Continue" backgroundImage="alertbtn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="GoOnGameClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="geZ-jV-r8n"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="rKT-Lq-o1B" firstAttribute="leading" secondItem="KVG-8o-GHB" secondAttribute="leading" id="4Gw-zo-f2l"/>
+                        <constraint firstItem="C11-Gl-Okv" firstAttribute="width" secondItem="Kmn-Pc-AO1" secondAttribute="width" id="55Q-ic-tDu"/>
+                        <constraint firstAttribute="trailing" secondItem="C11-Gl-Okv" secondAttribute="trailing" constant="10" id="AH1-re-Epw"/>
+                        <constraint firstItem="rKT-Lq-o1B" firstAttribute="width" secondItem="KVG-8o-GHB" secondAttribute="width" id="Q8J-iU-RRM"/>
+                        <constraint firstItem="C11-Gl-Okv" firstAttribute="leading" secondItem="Kmn-Pc-AO1" secondAttribute="trailing" constant="10" id="XoT-Y9-qNb"/>
+                        <constraint firstItem="Kmn-Pc-AO1" firstAttribute="top" secondItem="rKT-Lq-o1B" secondAttribute="bottom" constant="15" id="YVl-D7-JlF"/>
+                        <constraint firstAttribute="bottom" secondItem="Kmn-Pc-AO1" secondAttribute="bottom" priority="750" constant="25" id="cjh-EA-eFy"/>
+                        <constraint firstItem="C11-Gl-Okv" firstAttribute="centerY" secondItem="Kmn-Pc-AO1" secondAttribute="centerY" id="dO3-rd-tph"/>
+                        <constraint firstItem="rKT-Lq-o1B" firstAttribute="top" secondItem="KVG-8o-GHB" secondAttribute="top" constant="5" id="fop-Ux-vuT"/>
+                        <constraint firstAttribute="trailing" secondItem="rKT-Lq-o1B" secondAttribute="trailing" id="l8H-1F-5fJ"/>
+                        <constraint firstItem="C11-Gl-Okv" firstAttribute="height" secondItem="Kmn-Pc-AO1" secondAttribute="height" id="qbS-DB-EeU"/>
+                        <constraint firstItem="Kmn-Pc-AO1" firstAttribute="leading" secondItem="KVG-8o-GHB" secondAttribute="leading" constant="10" id="r6a-9O-fir"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lFO-oN-bAa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1D7-FN-YQ5"/>
+                <constraint firstItem="KVG-8o-GHB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3rc-UJ-InO"/>
+                <constraint firstItem="lFO-oN-bAa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6LF-oV-uuJ"/>
+                <constraint firstItem="KVG-8o-GHB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Cy3-DI-TXt"/>
+                <constraint firstAttribute="trailing" secondItem="lFO-oN-bAa" secondAttribute="trailing" id="cGh-Wp-ppt"/>
+                <constraint firstItem="KVG-8o-GHB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.747" id="gTY-pJ-Zuz"/>
+                <constraint firstAttribute="bottom" secondItem="lFO-oN-bAa" secondAttribute="bottom" id="voP-cY-Ihd"/>
+            </constraints>
+            <connections>
+                <outlet property="alertBody" destination="KVG-8o-GHB" id="Pfi-mr-Kww"/>
+                <outlet property="bgImageView" destination="lFO-oN-bAa" id="yI6-8Q-lik"/>
+                <outlet property="goHomeBtn" destination="Kmn-Pc-AO1" id="fT9-q4-9jd"/>
+                <outlet property="goOnBtn" destination="C11-Gl-Okv" id="35Z-g0-H41"/>
+                <outlet property="nativeAdPlaceholder" destination="rKT-Lq-o1B" id="Dbk-xC-zuz"/>
+                <outlet property="placeHolderApp" destination="V43-Ew-3Ms" id="iwd-Ub-YGk"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertbtn" width="112" height="43"/>
+        <image name="imarkPlaceHolder" width="840" height="444"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+/* 
+  Localizable.strings
+  Jump
+
+  Created by xueyognwei on 2017/7/10.
+  Copyright © 2017年 xueyognwei. All rights reserved.
+*/
+"Click on Screen" = "点击屏幕";
+"Start Game" = "开始游戏";
+"Settings" = "设置";
+"Music" = "音乐";
+"Sound" = "音效";
+"Notification" = "通知";
+"Restore" = "恢复购买";
+"Contact" = "联系我们";
+"About" = "关于我们";
+"Clear Obstacle" = "清除障碍";
+"Rapid Sprint" = "急速冲刺";
+"Wings Protection" = "天使护佑";
+"Inadequate Diamond" = "钻石不足";
+"Gold Doubles" = "金币翻倍";
+"Home" = "回到首页";
+"Remove ads" = "永久去广告";
+"Share" = "分享";
+"Share New Record" = "分享赚钻石";
+"Highest Score" = "最高成绩";
+"Failed purchase" = "购买失败";
+"Successful purchase！" = "购买成功！";
+"Today 's diamonds have been all led away, come back tomorrow." = "今日钻石已领完，明日再来";
+"Item" = "道具";
+"Gold" = "金币";
+"Diamond" = "钻石";
+"Purchase" = "购买";
+"Come and get free diamonds! Challenge high scores in Hop Jump's colorful world!" = "快来领取免费钻石！在Hop Jump的多彩世界中挑战高分！";
+"Get %@?" = "是否购买%@?";
+"Get %@ gold?" = "是否购买%@金币？";
+"Cancel" = "取消";
+"OK" = "好的";
+"Yes" = "是";
+"No" = "否";
+"whether to spend %1@ diamonds for %2@ gold?" = "是否花费%1@钻石购买%2@金币？";
+"Lack of Gold" = "金币不足";
+"Lack of Diamond" = "钻石不足";
+"You got " = "你获得了";
+"New Record" = "新纪录";
+"Hop or Jump，Survival or Death" = "一步两步抉择，决定生死";
+"Score" = "本次得分";
+"Share successfully" = "分享成功";
+"Share failed" = "分享失败";
+"Successful" = "已翻倍";
+"Congratulations on getting" = "恭喜你获得";
+"Please check the network connection" = "请检查网络连接";
+"Long press to identify" = "长按识别";
+"Naughty Mr.Banana will let you slip" = "调皮的香蕉先生会让你滑倒";
+"Watch out！\nAvoid encounter Mr.Monster, otherwise the game is over！" = "小心！\n躲开怪兽先生，碰到它就惨啦！";
+"Use\"Wings Protection\", get a chance to resurrect." = "使用“天使护佑”，免疫一次死亡";
+"Left\n1\nJump" = "左\n1\n步";
+"Right\n2\nJump" = "右\n2\n步";
+"Cumulative Score" = "累计分数";
+"Gold Spending" = "已消耗金币";
+"Rate us" = "评价";
+"Come and challenge high scores in Hop Jump's colorful world!" = "快来和我一起在Hop Jump的多彩世界中挑战高分！";
+"Unlock this role？" = "是否解锁该角色？";
+"Not ready,Wait a jiff." = "未就绪，给我3秒钟 ^_^";
+"" = "";
+"" = "";
+"" = "";
+"" = "";

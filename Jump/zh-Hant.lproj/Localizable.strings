@@ -1,0 +1,68 @@
+/* 
+  Localizable.strings
+  Jump
+
+  Created by xueyognwei on 2017/7/10.
+  Copyright © 2017年 xueyognwei. All rights reserved.
+*/
+"Click on Screen" = "點擊屏幕";
+"Start Game" = "開始遊戲";
+"Settings" = "設置";
+"Music" = "音樂";
+"Sound" = "音效";
+"Notification" = "通知";
+"Restore" = "恢復購買";
+"Contact" = "聯繫我們";
+"About" = "關於我們";
+"Clear Obstacle" = "清除障碍";
+"Rapid Sprint" = "急速衝刺";
+"Wings Protection" = "天使護佑";
+"Inadequate Diamond" = "鑽石不足";
+"Gold Doubles" = "金幣翻倍";
+"Home" = "回到首頁";
+"Remove ads" = "永久去廣告";
+"Share" = "分享";
+"Share New Record" = "分享賺鑽石";
+"Highest Score" = "最高成績";
+"Failed purchase" = "購買失敗";
+"Successful purchase！" = "購買成功！";
+"Today 's diamonds have been all led away, come back tomorrow." = "今日鑽石已領完，明日再來";
+"Purchase" = "購買";
+"Item" = "道具";
+"Gold" = "金幣";
+"Diamond" = "鑽石";
+"Come and get free diamonds! Challenge high scores in Hop Jump's colorful world!" = "快來領取免費鑽石！在Hop Jump的多彩世界中挑戰高分！";
+"Get %@?" = "是否購買%@？";
+"Get %@ gold?" = "是否購買%@金幣？";
+"Cancel" = "取消";
+"OK" = "好的";
+"Yes" = "是";
+"No" = "否";
+"whether to spend %1@ diamonds for %2@ gold?" = "是否花費%1@鑽石購買%2@金幣？";
+"Lack of Gold" = "金幣不足";
+"Lack of Diamond" = "鑽石不足";
+"You got " = "你獲得了";
+"New Record" = "新紀錄";
+"Hop or Jump，Survival or Death" = "一步兩步抉擇，決定生死";
+"Score" = "本次得分";
+"Share successfully" = "分享成功";
+"Share failed" = "分享失敗";
+"Successful" = "已翻倍";
+"Congratulations on getting" = "恭喜你獲得";
+"Please check the network connection" = "請檢查網絡連接";
+"Long press to identify" = "长按识别";
+"Naughty Mr.Banana will let you slip" = "調皮的香蕉先生會讓你滑倒";
+"Watch out！\nAvoid encounter Mr.Monster, otherwise the game is over！" = "小心！\n躲開怪獸先生，碰到它就慘啦！";
+"Use\"Wings Protection\", get a chance to resurrect." = "使用“天使護佑”，免疫一次死亡";
+"Left\n1\nJump" = "左\n1\n步";
+"Right\n2\nJump" = "右\n2\n步";
+"Cumulative Score" = "累計分數";
+"Gold Spending" = "已消耗金幣";
+"Rate us" = "評估";
+"Come and challenge high scores in Hop Jump's colorful world!" = "快來和我一起在Hop Jump的多彩世界中挑戰高分！";
+"Unlock this role？" = "是否解鎖該角色？";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";

@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  Jump
+
+  Created by xueyognwei on 2017/7/10.
+  Copyright © 2017年 xueyognwei. All rights reserved.
+*/
+"Click on Screen" = "クリックして";
+"Start Game" = "開始";
+"Settings" = "設定";
+"Music" = "音楽";
+"Sound" = "効果音";
+"Notification" = "お知らせ";
+"Restore" = "購入を復元";
+"Contact" = "連絡する";
+"About" = "クレジッ";
+"Clear Obstacle" = "クリアモンスター";
+"Rapid Sprint" = "速いスプリント";
+"Wings Protection" = "翼の保護";
+"Inadequate Diamond" = "不十分なダイヤモンド";
+"Gold Doubles" = "ダブルゴールド";
+"Home" = "ホームページ";
+"Remove ads" = "広告を削除";
+"Share" = "シェア";
+"Share New Record" = "新しいレコードを共有";
+"Highest Score" = "最高スコア";
+"Failed purchase" = "失敗した購入";
+"Successful purchase！" = "成功した購入！";
+"Today 's diamonds have been all led away, come back tomorrow." = "明日戻ってください。";
+"Purchase" = "ショップ";
+"Item" = "どうぐ";
+"Gold" = "ゴールド";
+"Diamond" = "ダイヤモンド";
+"Come and get free diamonds! Challenge high scores in Hop Jump's colorful world!" = "無料のダイヤモンドを手に入れよう！ Hop Jump のカラフルな世界でハイスコアにチャレンジ！";
+"Get %@?" = "%@ を得る？";
+"Get %@ gold?" = "%@ゴールドを得る？";
+"Cancel" = "キャンセル";
+"OK" = "オーケー";
+"Yes" = "はい";
+"No" = "いいえ";
+"whether to spend %1@ diamonds for %2@ gold?" = "%1@のダイヤモンドを%2@のゴールドに変換？";
+"Lack of Gold" = "不十分なゴールド";
+"Lack of Diamond" = "不十分なダイヤモンド";
+"You got " = "あなたが得ます";
+"New Record" = "新記録";
+//"Hop or Jump，Survival or Death" = "";
+"Score" = "スコア";
+"Share successfully" = "成功したシェア";
+"Share failed" = "シェアは成功しませんでした";
+"Successful" = "成功した";
+"Congratulations on getting" = "あなたが得ます";
+"Please check the network connection" = "ネットワーク接続を確認してください";
+"Long press to identify" = "長く押すと識別する";
+"Naughty Mr.Banana will let you slip" = "バナナはあなたを落とさせます";
+"Watch out！\nAvoid encounter Mr.Monster, otherwise the game is over！" = "注意してください！\nミスターモンスターとの出会いを避けてください。さもなければ、ゲームは終わりです！";
+"Use\"Wings Protection\", get a chance to resurrect." = "使用“翼の保護”，復活のチャンスを得る.";
+"Left\n1\nJump" = "左\n1\n歩";
+"Right\n2\nJump" = "右\n2\n歩";
+"Cumulative Score" = "累積スコア";
+"Gold Spending" = "ゴールド消費";
+"Rate us" = "評価";
+"Come and challenge high scores in Hop Jump's colorful world!" = "Hop Jump のカラフルな世界でハイスコアに挑戦してください！";
+"Unlock this role？" = "役割のロックを解除しますか？";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="changchengteyuanti.ttf">
+            <string>changchengteyuanti</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JumperRolesViewController">
+            <connections>
+                <outlet property="actionBtn" destination="qQa-dx-WFM" id="xpe-FP-KGf"/>
+                <outlet property="bgView" destination="p1P-1u-dOo" id="GmK-uK-0I1"/>
+                <outlet property="bigShowImgView" destination="HkL-G1-WBd" id="NbQ-FE-6r7"/>
+                <outlet property="collectionView" destination="S5G-qx-TfY" id="0ch-vD-A33"/>
+                <outlet property="corverView" destination="fSo-7l-znb" id="zGQ-w9-zgq"/>
+                <outlet property="diamondCountBtn" destination="SoU-y3-gaI" id="Ggi-fq-DwC"/>
+                <outlet property="godCountBtn" destination="3xG-bs-7KJ" id="q4i-bY-5QS"/>
+                <outlet property="unlockBtn" destination="9lg-WY-Vse" id="dSS-As-fNX"/>
+                <outlet property="unlockDesLabel" destination="zxl-Fn-a0j" id="9CT-4c-U62"/>
+                <outlet property="unlockProgressLabel" destination="a9W-wz-hjn" id="yzh-oh-IVq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="changeRoleBg" translatesAutoresizingMaskIntoConstraints="NO" id="FUu-p1-w9m">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1P-1u-dOo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoU-y3-gaI">
+                            <rect key="frame" x="15" y="11" width="89" height="29"/>
+                            <fontDescription key="fontDescription" name="changchengteyuanti" family="changcheng" pointSize="14"/>
+                            <state key="normal" backgroundImage="home钻石数值Add">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onDimondClick:" destination="-1" eventType="touchUpInside" id="FfQ-Tv-eLK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xG-bs-7KJ">
+                            <rect key="frame" x="119" y="7" width="96" height="37"/>
+                            <fontDescription key="fontDescription" name="changchengteyuanti" family="changcheng" pointSize="14"/>
+                            <state key="normal" backgroundImage="home金币数值Add">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onGoldClick:" destination="-1" eventType="touchUpInside" id="Via-hs-LHE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUu-a0-ef4">
+                            <rect key="frame" x="310" y="1" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="5j4-M2-NQw"/>
+                                <constraint firstAttribute="width" constant="50" id="AFF-t5-71p"/>
+                            </constraints>
+                            <state key="normal" image="商店X_btn">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onCloseBtnClick:" destination="-1" eventType="touchUpInside" id="ev7-Hi-2sE"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="S5G-qx-TfY">
+                            <rect key="frame" x="0.0" y="234" width="375" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JMv-4l-wPg">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQa-dx-WFM">
+                            <rect key="frame" x="132" y="444" width="112" height="213"/>
+                            <state key="normal" image="changeRole开始_btn"/>
+                            <connections>
+                                <action selector="onStartGame:" destination="-1" eventType="touchUpInside" id="xAJ-9h-RU1"/>
+                            </connections>
+                        </button>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSo-7l-znb" userLabel="corverView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HkL-G1-WBd">
+                            <rect key="frame" x="74.5" y="189" width="225" height="225"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="HkL-G1-WBd" secondAttribute="height" multiplier="1:1" id="nIP-Aq-rS8"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9W-wz-hjn">
+                            <rect key="frame" x="144.5" y="553" width="87.5" height="35"/>
+                            <fontDescription key="fontDescription" name="changchengteyuanti" family="changcheng" pointSize="35"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已消耗钻石" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-Fn-a0j">
+                            <rect key="frame" x="126" y="518" width="125" height="25"/>
+                            <fontDescription key="fontDescription" name="changchengteyuanti" family="changcheng" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-WY-Vse" customClass="XYWButton">
+                            <rect key="frame" x="84.5" y="517" width="207" height="67"/>
+                            <fontDescription key="fontDescription" name="changchengteyuanti" family="changcheng" pointSize="25"/>
+                            <state key="normal" title="解锁" backgroundImage="whiteBtnBg">
+                                <color key="titleColor" red="0.15686274509803921" green="0.71372549019607845" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onUnlockClick:" destination="-1" eventType="touchUpInside" id="j8G-ix-Cyz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="HkL-G1-WBd" firstAttribute="centerX" secondItem="S5G-qx-TfY" secondAttribute="centerX" id="6vi-0O-DXh"/>
+                        <constraint firstItem="SoU-y3-gaI" firstAttribute="top" secondItem="p1P-1u-dOo" secondAttribute="top" constant="11" id="A8O-sM-knp"/>
+                        <constraint firstItem="S5G-qx-TfY" firstAttribute="leading" secondItem="p1P-1u-dOo" secondAttribute="leading" id="CZv-rQ-Rge"/>
+                        <constraint firstItem="fSo-7l-znb" firstAttribute="top" secondItem="p1P-1u-dOo" secondAttribute="top" id="Ccr-7d-AJE"/>
+                        <constraint firstItem="HkL-G1-WBd" firstAttribute="width" secondItem="S5G-qx-TfY" secondAttribute="width" multiplier="0.6" id="Dih-62-pFL"/>
+                        <constraint firstItem="a9W-wz-hjn" firstAttribute="centerX" secondItem="qQa-dx-WFM" secondAttribute="centerX" id="EMh-pG-JJf"/>
+                        <constraint firstAttribute="trailing" secondItem="fSo-7l-znb" secondAttribute="trailing" id="Eg8-ij-Pvw"/>
+                        <constraint firstAttribute="bottom" secondItem="qQa-dx-WFM" secondAttribute="bottom" constant="10" id="Fsc-2h-mSi"/>
+                        <constraint firstItem="qQa-dx-WFM" firstAttribute="top" secondItem="S5G-qx-TfY" secondAttribute="bottom" constant="10" id="HYV-hh-x29"/>
+                        <constraint firstItem="zUu-a0-ef4" firstAttribute="centerY" secondItem="3xG-bs-7KJ" secondAttribute="centerY" id="JHX-Gv-DNA"/>
+                        <constraint firstItem="S5G-qx-TfY" firstAttribute="height" secondItem="p1P-1u-dOo" secondAttribute="height" multiplier="0.3" id="L53-Ny-LAL"/>
+                        <constraint firstItem="zxl-Fn-a0j" firstAttribute="centerX" secondItem="a9W-wz-hjn" secondAttribute="centerX" id="PTJ-VT-RtM"/>
+                        <constraint firstItem="SoU-y3-gaI" firstAttribute="leading" secondItem="p1P-1u-dOo" secondAttribute="leading" constant="15" id="Pmm-ae-v4K"/>
+                        <constraint firstItem="9lg-WY-Vse" firstAttribute="centerX" secondItem="qQa-dx-WFM" secondAttribute="centerX" id="Qdy-O7-lkV"/>
+                        <constraint firstAttribute="trailing" secondItem="S5G-qx-TfY" secondAttribute="trailing" id="XeW-oM-QVP"/>
+                        <constraint firstAttribute="trailing" secondItem="zUu-a0-ef4" secondAttribute="trailing" constant="15" id="bOy-Dg-UuN"/>
+                        <constraint firstItem="3xG-bs-7KJ" firstAttribute="leading" secondItem="SoU-y3-gaI" secondAttribute="trailing" constant="15" id="cEg-Dh-Ia1"/>
+                        <constraint firstItem="9lg-WY-Vse" firstAttribute="centerY" secondItem="qQa-dx-WFM" secondAttribute="centerY" id="dlt-t0-wYS"/>
+                        <constraint firstItem="a9W-wz-hjn" firstAttribute="centerY" secondItem="qQa-dx-WFM" secondAttribute="centerY" constant="20" id="f7D-mQ-yCy"/>
+                        <constraint firstItem="S5G-qx-TfY" firstAttribute="centerY" secondItem="p1P-1u-dOo" secondAttribute="centerY" id="iZD-YF-739"/>
+                        <constraint firstItem="qQa-dx-WFM" firstAttribute="centerX" secondItem="p1P-1u-dOo" secondAttribute="centerX" id="nzb-Z5-rKx"/>
+                        <constraint firstAttribute="bottom" secondItem="fSo-7l-znb" secondAttribute="bottom" id="pYf-qv-X5p"/>
+                        <constraint firstItem="HkL-G1-WBd" firstAttribute="bottom" secondItem="S5G-qx-TfY" secondAttribute="bottom" constant="-20" id="rrN-KT-7OH"/>
+                        <constraint firstItem="3xG-bs-7KJ" firstAttribute="centerY" secondItem="SoU-y3-gaI" secondAttribute="centerY" id="stE-pc-6oz"/>
+                        <constraint firstItem="a9W-wz-hjn" firstAttribute="top" secondItem="zxl-Fn-a0j" secondAttribute="bottom" constant="10" id="tUv-c9-MZ9"/>
+                        <constraint firstItem="fSo-7l-znb" firstAttribute="leading" secondItem="p1P-1u-dOo" secondAttribute="leading" id="yyg-2t-1A2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FUu-p1-w9m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A7h-4B-lB9"/>
+                <constraint firstItem="FUu-p1-w9m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JEb-L5-FJ4"/>
+                <constraint firstAttribute="bottom" secondItem="p1P-1u-dOo" secondAttribute="bottom" id="JSJ-04-1U5"/>
+                <constraint firstItem="p1P-1u-dOo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MFC-Nn-ryE"/>
+                <constraint firstAttribute="bottom" secondItem="FUu-p1-w9m" secondAttribute="bottom" id="eXY-qG-jEO"/>
+                <constraint firstItem="p1P-1u-dOo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="geT-La-TqK"/>
+                <constraint firstAttribute="trailing" secondItem="FUu-p1-w9m" secondAttribute="trailing" id="h9O-zo-rPj"/>
+                <constraint firstAttribute="trailing" secondItem="p1P-1u-dOo" secondAttribute="trailing" id="jC4-G4-KIV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="changeRoleBg" width="375" height="667"/>
+        <image name="changeRole开始_btn" width="112" height="112"/>
+        <image name="home金币数值Add" width="96" height="37"/>
+        <image name="home钻石数值Add" width="89" height="29"/>
+        <image name="whiteBtnBg" width="207" height="67"/>
+        <image name="商店X_btn" width="25" height="25"/>
+    </resources>
+</document>

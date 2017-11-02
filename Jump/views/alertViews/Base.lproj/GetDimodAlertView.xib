@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uAV-0Q-gxL" customClass="GetDimodAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations on getting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwe-Pn-zts">
+                    <rect key="frame" x="96" y="129" width="183" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="SSu-Ze-CBb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="diamondsX1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGH-LQ-w37">
+                    <rect key="frame" x="146" y="154" width="84" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.98039215690000003" green="0.23921568630000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="746" verticalCompressionResistancePriority="746" image="share钻石-奖励" translatesAutoresizingMaskIntoConstraints="NO" id="hDp-vH-Shs">
+                    <rect key="frame" x="112.5" y="0.0" width="150" height="128.5"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iGH-LQ-w37" firstAttribute="top" secondItem="Lwe-Pn-zts" secondAttribute="bottom" constant="5" id="0jb-j5-3xX"/>
+                <constraint firstItem="hDp-vH-Shs" firstAttribute="top" secondItem="uAV-0Q-gxL" secondAttribute="top" id="49C-9J-Fl2"/>
+                <constraint firstItem="Lwe-Pn-zts" firstAttribute="top" secondItem="hDp-vH-Shs" secondAttribute="bottom" id="7bW-20-puK"/>
+                <constraint firstItem="Lwe-Pn-zts" firstAttribute="centerX" secondItem="uAV-0Q-gxL" secondAttribute="centerX" id="Aoh-PO-oej"/>
+                <constraint firstItem="iGH-LQ-w37" firstAttribute="centerX" secondItem="Lwe-Pn-zts" secondAttribute="centerX" id="Daj-6b-kfW"/>
+                <constraint firstItem="hDp-vH-Shs" firstAttribute="width" secondItem="uAV-0Q-gxL" secondAttribute="width" multiplier="0.4" id="S6G-H3-5pX"/>
+                <constraint firstItem="hDp-vH-Shs" firstAttribute="centerX" secondItem="uAV-0Q-gxL" secondAttribute="centerX" id="Yar-Ye-vvM"/>
+                <constraint firstItem="Lwe-Pn-zts" firstAttribute="centerY" secondItem="uAV-0Q-gxL" secondAttribute="centerY" id="xRG-wO-Wwq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="countLabel" destination="iGH-LQ-w37" id="byF-7R-VWD"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="201"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share钻石-奖励" width="130" height="88"/>
+    </resources>
+</document>

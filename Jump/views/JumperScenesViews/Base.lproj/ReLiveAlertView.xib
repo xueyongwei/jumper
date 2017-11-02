@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReLiveAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cy-gC-Xfq">
+                    <rect key="frame" x="300" y="193" width="25" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Nfq-pf-OGQ"/>
+                        <constraint firstAttribute="width" constant="25" id="hvJ-mi-73S"/>
+                    </constraints>
+                    <state key="normal" image="alertX_btn"/>
+                    <connections>
+                        <action selector="onClose:" destination="iN0-l3-epB" eventType="touchUpInside" id="eFt-nA-0eA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUl-DZ-2VX">
+                    <rect key="frame" x="50.5" y="193.5" width="275" height="280"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-xU-CL5" customClass="XYWButton">
+                            <rect key="frame" x="15" y="212" width="117.5" height="43"/>
+                            <state key="normal" title=" 免费" image="alert免费复活" backgroundImage="alertbtn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onFreeClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="fdI-LB-Eg6"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原地复活?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq4-s8-1dz">
+                            <rect key="frame" x="103" y="15" width="69" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nh-KF-Oe0">
+                            <rect key="frame" x="120" y="103.5" width="35.5" height="72"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                            <color key="textColor" red="0.30980392156862746" green="0.76078431372549016" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXF-Bl-8No" customClass="XYWButton">
+                            <rect key="frame" x="142.5" y="212" width="117.5" height="43"/>
+                            <state key="normal" title=" X2" image="alert钻石复活" backgroundImage="alertbtn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPayClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Igf-gs-aBP"/>
+                            </connections>
+                        </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vpS-Y2-8kk">
+                            <rect key="frame" x="90" y="130" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Zq4-s8-1dz" firstAttribute="centerX" secondItem="yUl-DZ-2VX" secondAttribute="centerX" id="4q6-uk-VQY"/>
+                        <constraint firstAttribute="trailing" secondItem="LXF-Bl-8No" secondAttribute="trailing" constant="15" id="FAz-rP-LAj"/>
+                        <constraint firstItem="9Nh-KF-Oe0" firstAttribute="centerX" secondItem="yUl-DZ-2VX" secondAttribute="centerX" id="OCW-ey-03B"/>
+                        <constraint firstItem="LXF-Bl-8No" firstAttribute="leading" secondItem="FHb-xU-CL5" secondAttribute="trailing" constant="10" id="Rmt-yC-VIS"/>
+                        <constraint firstItem="LXF-Bl-8No" firstAttribute="centerY" secondItem="FHb-xU-CL5" secondAttribute="centerY" id="VXL-2C-zLp"/>
+                        <constraint firstItem="FHb-xU-CL5" firstAttribute="leading" secondItem="yUl-DZ-2VX" secondAttribute="leading" constant="15" id="gLa-to-fJJ"/>
+                        <constraint firstAttribute="bottom" secondItem="FHb-xU-CL5" secondAttribute="bottom" constant="25" id="iNv-LZ-jKK"/>
+                        <constraint firstItem="FHb-xU-CL5" firstAttribute="width" secondItem="LXF-Bl-8No" secondAttribute="width" id="kEv-GH-8d4"/>
+                        <constraint firstItem="9Nh-KF-Oe0" firstAttribute="centerY" secondItem="yUl-DZ-2VX" secondAttribute="centerY" id="lNH-L2-Urc"/>
+                        <constraint firstItem="Zq4-s8-1dz" firstAttribute="top" secondItem="yUl-DZ-2VX" secondAttribute="top" constant="15" id="qNL-Cc-u7W"/>
+                        <constraint firstItem="vpS-Y2-8kk" firstAttribute="centerY" secondItem="9Nh-KF-Oe0" secondAttribute="centerY" id="qPc-Pf-Co7"/>
+                        <constraint firstItem="9Nh-KF-Oe0" firstAttribute="leading" secondItem="vpS-Y2-8kk" secondAttribute="trailing" constant="10" id="vJb-Nl-2VS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yUl-DZ-2VX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3kn-iO-rP4"/>
+                <constraint firstItem="yUl-DZ-2VX" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.42" id="D3T-hf-lXj"/>
+                <constraint firstItem="7Cy-gC-Xfq" firstAttribute="trailing" secondItem="yUl-DZ-2VX" secondAttribute="trailing" id="HQq-4W-XQo"/>
+                <constraint firstItem="yUl-DZ-2VX" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.733" id="LpY-Ui-sK2"/>
+                <constraint firstItem="yUl-DZ-2VX" firstAttribute="top" secondItem="7Cy-gC-Xfq" secondAttribute="bottom" constant="-50" id="O8H-mZ-B70"/>
+                <constraint firstItem="yUl-DZ-2VX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mpC-di-45G"/>
+            </constraints>
+            <connections>
+                <outlet property="alertBody" destination="yUl-DZ-2VX" id="MKR-Qc-UoT"/>
+                <outlet property="closeBtn" destination="7Cy-gC-Xfq" id="cX8-CR-4dw"/>
+                <outlet property="closeBtnBottomConst" destination="O8H-mZ-B70" id="UAl-go-qjr"/>
+                <outlet property="freeBtn" destination="FHb-xU-CL5" id="Mpq-Q3-zG1"/>
+                <outlet property="loadingActivity" destination="vpS-Y2-8kk" id="zg2-Rl-eIP"/>
+                <outlet property="payBtn" destination="LXF-Bl-8No" id="Kvi-zB-xv7"/>
+                <outlet property="secLabel" destination="9Nh-KF-Oe0" id="Stx-KG-cIb"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertX_btn" width="25" height="50"/>
+        <image name="alertbtn" width="112" height="43"/>
+        <image name="alert免费复活" width="30" height="22"/>
+        <image name="alert钻石复活" width="32" height="25"/>
+    </resources>
+</document>

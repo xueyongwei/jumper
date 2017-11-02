@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYWALertViewController">
+            <connections>
+                <outlet property="bodyHeightConst" destination="OWV-5e-OSV" id="OtV-E0-zvy"/>
+                <outlet property="bodyView" destination="lUQ-QQ-LEw" id="OPe-24-amQ"/>
+                <outlet property="centerbtn" destination="TrX-cg-vDy" id="Hko-0x-3Kn"/>
+                <outlet property="contentSpView" destination="XSq-f7-BQI" id="wwc-fa-59i"/>
+                <outlet property="leftBtn" destination="Bga-9A-Saw" id="muO-Dy-1ub"/>
+                <outlet property="rightBtn" destination="IoB-mB-lD9" id="mE2-uX-m3H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUQ-QQ-LEw" userLabel="bodyView">
+                    <rect key="frame" x="43" y="167.5" width="289" height="333.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wb-an-qCQ" userLabel="left">
+                            <rect key="frame" x="0.0" y="0.0" width="145" height="333.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-9A-Saw">
+                                    <rect key="frame" x="16" y="263.5" width="112" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="tw9-IN-96J"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="left" backgroundImage="alertbtn">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="leftBtnClick:" destination="-1" eventType="touchUpInside" id="rTM-r8-Wys"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Bga-9A-Saw" firstAttribute="centerX" secondItem="7Wb-an-qCQ" secondAttribute="centerX" id="3FC-AI-Dyw"/>
+                                <constraint firstAttribute="bottom" secondItem="Bga-9A-Saw" secondAttribute="bottom" constant="25" id="lOl-ww-NRN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cch-Sw-Qa1" userLabel="right">
+                            <rect key="frame" x="144" y="0.0" width="145" height="333.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoB-mB-lD9">
+                                    <rect key="frame" x="16" y="263.5" width="112" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="bjl-4b-Km2"/>
+                                    </constraints>
+                                    <state key="normal" title="right" backgroundImage="alertbtn">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="rightBtnClick:" destination="-1" eventType="touchUpInside" id="7eT-OZ-nXi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="IoB-mB-lD9" secondAttribute="bottom" constant="25" id="Wot-pf-Q3v"/>
+                                <constraint firstItem="IoB-mB-lD9" firstAttribute="centerX" secondItem="Cch-Sw-Qa1" secondAttribute="centerX" id="XgG-C8-re3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-f7-BQI" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="-0.5" width="289" height="263.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrX-cg-vDy">
+                            <rect key="frame" x="88" y="263.5" width="112" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="uQo-qb-Ka9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="OK" backgroundImage="alertbtn">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="centerBtnClick:" destination="-1" eventType="touchUpInside" id="NW5-bv-sGd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Cch-Sw-Qa1" firstAttribute="width" secondItem="lUQ-QQ-LEw" secondAttribute="width" multiplier="0.5" id="661-jo-SXb"/>
+                        <constraint firstItem="7Wb-an-qCQ" firstAttribute="top" secondItem="lUQ-QQ-LEw" secondAttribute="top" id="7nk-CR-4fI"/>
+                        <constraint firstAttribute="bottom" secondItem="7Wb-an-qCQ" secondAttribute="bottom" id="8Zv-hH-kWg"/>
+                        <constraint firstItem="Cch-Sw-Qa1" firstAttribute="top" secondItem="lUQ-QQ-LEw" secondAttribute="top" id="9sb-Ah-N1w"/>
+                        <constraint firstItem="7Wb-an-qCQ" firstAttribute="width" secondItem="Cch-Sw-Qa1" secondAttribute="width" id="PNw-x4-Uah"/>
+                        <constraint firstAttribute="trailing" secondItem="Cch-Sw-Qa1" secondAttribute="trailing" id="PzP-8b-YUu"/>
+                        <constraint firstItem="TrX-cg-vDy" firstAttribute="top" secondItem="XSq-f7-BQI" secondAttribute="bottom" id="W9D-ZX-d3p"/>
+                        <constraint firstItem="XSq-f7-BQI" firstAttribute="leading" secondItem="lUQ-QQ-LEw" secondAttribute="leading" id="Xhp-CP-Kuv"/>
+                        <constraint firstItem="7Wb-an-qCQ" firstAttribute="leading" secondItem="lUQ-QQ-LEw" secondAttribute="leading" id="Xw8-p3-YZx"/>
+                        <constraint firstItem="XSq-f7-BQI" firstAttribute="top" secondItem="lUQ-QQ-LEw" secondAttribute="top" id="a9N-K5-FdT"/>
+                        <constraint firstAttribute="bottom" secondItem="TrX-cg-vDy" secondAttribute="bottom" constant="25" id="hEx-Cq-C7L"/>
+                        <constraint firstAttribute="trailing" secondItem="XSq-f7-BQI" secondAttribute="trailing" id="rFM-Lp-6ZG"/>
+                        <constraint firstItem="TrX-cg-vDy" firstAttribute="centerX" secondItem="lUQ-QQ-LEw" secondAttribute="centerX" id="vKE-fc-bGg"/>
+                        <constraint firstAttribute="bottom" secondItem="Cch-Sw-Qa1" secondAttribute="bottom" id="xsn-JP-PcD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lUQ-QQ-LEw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Bdf-BH-zmJ"/>
+                <constraint firstItem="lUQ-QQ-LEw" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="OWV-5e-OSV"/>
+                <constraint firstItem="lUQ-QQ-LEw" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.77" id="bCe-FF-Gge"/>
+                <constraint firstItem="lUQ-QQ-LEw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pyN-0i-rbh"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alertbtn" width="112" height="43"/>
+    </resources>
+</document>

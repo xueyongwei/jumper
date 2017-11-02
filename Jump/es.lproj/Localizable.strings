@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  Jump
+
+  Created by xueyognwei on 2017/7/10.
+  Copyright © 2017年 xueyognwei. All rights reserved.
+*/
+"Click on Screen" = "Haga clic en la pantalla";
+"Start Game" = "Iniciar el juego";
+"Settings" = "Ajustes";
+"Music" = "Música";
+"Sound" = "Soñar";
+"Notification" = "Notificación";
+"Restore" = "Restaurar Compra";
+"Contact" = "Contáctenos";
+"About" = "Créditos";
+"Clear Obstacle" = "eliminar los obstáculos";
+"Rapid Sprint" = "Sprint rápido";
+"Wings Protection" = "Protección de las alas";
+"Inadequate Diamond" = "Diamond inadecuada";
+"Gold Doubles" = "Dobles de Oro";
+"Home" = "Página principal";
+"Remove ads" = "Quitar anuncios";
+"Share" = "compartir";
+"Share New Record" = "Comparte nuevo récord";
+"Highest Score" = "Puntuación más alta";
+"Failed purchase" = "Error de compra";
+"Successful purchase！" = "compra con éxito!";
+"Today 's diamonds have been all led away, come back tomorrow." = "Por favor, vuelve mañana.";
+"Purchase" = "Tienda";
+"Item" = "el ítem";
+"Gold" = "oro";
+"Diamond" = "Diamante";
+"Come and get free diamonds! Challenge high scores in Hop Jump's colorful world!" = "Ven y consigue diamantes gratis! ¡Desafía las altas puntuaciones en el colorido mundo de Hop Jump!";
+"Get %@?" = "recibirás %@？";
+"Get %@ gold?" = "recibirás %@ oro？";
+"Cancel" = "Cancelar";
+"OK" = "yo sé";
+"Yes" = "sí";
+"No" = "no";
+"whether to spend %1@ diamonds for %2@ gold?" = "%1@ diamantes a cambio de %2@ oro？";
+"Lack of Gold" = "Falta de oro";
+"Lack of Diamond" = "Falta de diamante";
+"You got " = "Usted obtiene ";
+"New Record" = "Nuevo récord";
+//"Hop or Jump，Survival or Death" = "";
+"Score" = "Puntuación";
+"Share successfully" = "Compartir con éxito";
+"Share failed" = "Compartir fallan";
+"Successful" = "Exitoso";
+"Congratulations on getting" = "Enhorabuena para conseguir ";
+"Please check the network connection" = "Compruebe la conexión de red";
+"Long press to identify" = "Prensa larga para identificar";
+"Naughty Mr.Banana will let you slip" = "El plátano travieso le dejará deslizarse";
+"Watch out！\nAvoid encounter Mr.Monster, otherwise the game is over！" = "Cuidado! \nEvite el encuentro Mr.Monster, de lo contrario el juego ha terminado!";
+"Use\"Wings Protection\", get a chance to resurrect." = "Uso\"Protección de las alas\", resucitado de la muerte.";
+"Left\n1\nJump" = "Izquierda\n1\npaso";
+"Right\n2\nJump" = "derecho\n2\npaso";
+"Cumulative Score" = "Puntuación acumulada";
+"Gold Spending" = "Ha consumido oro";
+"Rate us" = "5 estrellas";
+"Come and challenge high scores in Hop Jump's colorful world!" = "¡Venga y desafíe altas puntuaciones en el colorido mundo de Hop Jump!";
+"Unlock this role？" = "desbloquear este papel？";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SettingCollectionViewCell" id="gTV-IL-0wX" customClass="SettingCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="112" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUt-mU-wVl">
+                        <rect key="frame" x="23" y="23" width="66" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="PUt-mU-wVl" secondAttribute="height" multiplier="1:1" id="Q7V-2B-jLC"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="N1U-8q-9Bi"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="604-0c-IEE">
+                        <rect key="frame" x="5" y="96" width="102" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="604-0c-IEE" secondAttribute="trailing" constant="5" id="1AK-Ol-C2Q"/>
+                <constraint firstItem="PUt-mU-wVl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="23" id="XEx-08-M5o"/>
+                <constraint firstItem="604-0c-IEE" firstAttribute="top" secondItem="PUt-mU-wVl" secondAttribute="bottom" constant="7" id="gZ2-TK-SiM"/>
+                <constraint firstItem="604-0c-IEE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="kHO-Aa-hBe"/>
+                <constraint firstAttribute="trailing" secondItem="PUt-mU-wVl" secondAttribute="trailing" constant="23" id="p8r-FZ-k1l"/>
+                <constraint firstItem="PUt-mU-wVl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="23" id="uaG-zK-3kt"/>
+            </constraints>
+            <size key="customSize" width="112" height="130"/>
+            <connections>
+                <outlet property="iconImageBTn" destination="PUt-mU-wVl" id="a8K-J0-cmM"/>
+                <outlet property="titleLabel" destination="604-0c-IEE" id="65i-te-Hv9"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="94"/>
+        </collectionViewCell>
+    </objects>
+</document>
